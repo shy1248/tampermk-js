@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name              Fuck VIP
+// @name              FuckVIP
 // @namespace         https://github.com/shy1248/tampermk-js
 // @version           1.0
 // @icon
