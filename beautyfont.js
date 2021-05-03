@@ -14,7 +14,6 @@
 // @exclude      *console.cloud.google.com/cloudshell*
 // @run-at       document-start
 // @grant        unsafeWindow
-// @license      MIT
 // ==/UserScript==
 
 // ===============
