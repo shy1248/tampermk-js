@@ -23,6 +23,5 @@
 // ===============
 (function () {
     // change the font family for yourself favorite.
-    var fontfamily = "PingFang SC";
-    changeFont(fontfamily ,1);
+    changeFont("PingFang SC" ,1);
 })();
