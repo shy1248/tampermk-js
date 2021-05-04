@@ -10,6 +10,7 @@
 // @updateURL    https://raw.githubusercontent.com/shy1248/tampermk-js/master/copyit.js
 // @downloadURL  https://raw.githubusercontent.com/shy1248/tampermk-js/master/copyit.js
 // @include      *
+// @exclude      *.md
 // @grant        none
 // ==/UserScript==
 
