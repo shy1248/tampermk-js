@@ -10,6 +10,7 @@
 // @updateURL    https://raw.githubusercontent.com/shy1248/tampermk-js/master/markdecorator.js
 // @downloadURL  https://raw.githubusercontent.com/shy1248/tampermk-js/master/markdecorator.js
 // @include      *.md
+// @exclude      https://github.com
 // @grant        none
 // @require      https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.slim.min.js
 // ==/UserScript==
