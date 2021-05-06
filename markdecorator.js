@@ -178,7 +178,7 @@
 
     // generated toc
     var bodyNodes = document.getElementById('_html').childNodes
-    var tocHtml = ''
+    var tocHtml = '<h1><center>Table Content</center></h1>'
     for (var i = 0; i < bodyNodes.length; i++) {
         if (/h[1-6]/i.test(bodyNodes[i].tagName)) {
             var id = bodyNodes[i].getAttribute('id')
