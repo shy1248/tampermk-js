@@ -216,7 +216,9 @@ function setPosition() {
 }
 
 function setCookie(name, value) {
-    document.cookie = name + "=" + escape(value) + "; ";
+    var exdate = new Date();
+    exdate.setTime(exdate.getTime() + 365*24*60*60*1000);        // cookie ?????365?
+    document.cookie = name + "=" + escape(value) + ";expires=" + exdate.toGMTString();
 }
 
 function getCookie(name) {
