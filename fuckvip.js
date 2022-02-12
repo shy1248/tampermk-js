@@ -44,16 +44,21 @@
 
     GM_addStyle(` .h-icon-play { color: #d926b5; fill: #d926b5; height: 80px; width: 80px; position: fixed; z-index: 99999; top: 10px; left: 0; cursor: pointer; } .h-ol { position: fixed; top: 70px; left: 20px; z-index: 99999; counter-reset: li; list-style: none; font-size: 14px; padding: 0; margin-bottom: 4em; text-shadow: 0 1px 0 rgba(255, 255, 255, .5); display: none; } .h-ol a { position: relative; display: block; padding: 3px 10px 3px 2em; margin: 0.5em 0; background: #ddd; color: #444; text-decoration: none; border-radius: 0.3em; transition: all 0.3s ease-out; } .h-ol a:hover { background: #eee; color: #ff6f5c; transition: all 0.3s ease-out; } .h-ol a::before { content: counter(li); counter-increment: li; position: absolute; left: -1.2em; top: 50%; margin-top: -0.9em; background: #87ceeb; height: 1.5em; width: 1.5em; line-height: 1.5em; border: 0.1em solid #fff; text-align: center; font-weight: bold; border-radius: 1.5em; }`);
 
-    let api = [
-        'http://2gty.com/apiurl/yun.php?url=',
-        'http://api.aaaak.pw/q/?url=',
-        'http://jx.598110.com/?url=',
-        'http://vip.jlsprh.com/?url=',
-        'http://jx.618ge.com/?url=',
-        'http://jx.du2.cc/?url=',
-        'https://z1.m1907.cn//?jx=',
-        'https: //vip.hackmg.com/jx/index.php?url='
-    ];
+    // let api = [
+    //     'http://2gty.com/apiurl/yun.php?url=',
+    //     'http://api.aaaak.pw/q/?url=',
+    //     'http://jx.598110.com/?url=',
+    //     'http://vip.jlsprh.com/?url=',
+    //     'http://jx.618ge.com/?url=',
+    //     'http://jx.du2.cc/?url=',
+    //     'https://z1.m1907.cn//?jx=',
+    //     'https: //vip.hackmg.com/jx/index.php?url='
+    // ];
+
+  let api = {
+    "M1907": "https://z1.m1907.cn//?jx='",
+    "OKJX": "https://okjx.cc?url="
+    }
 
     let main = {
         showButton: function() {
@@ -64,9 +69,12 @@
                 $(top.document.body).append(mainButton);
                 $(top.document.body).append(apiList);
 
-                api.forEach((val, index) => {
-                    $('.h-ol').append(`<li><a target="_blank" href="${val + location.href}">解析API-${index}</a></li>`)
-                });
+                // api.forEach((val, index) => {
+                //     $('.h-ol').append(`<li><a target="_blank" href="${val + location.href}">解析API-${index}</a></li>`)
+                // });
+              for (let key in api) {
+                $('.h-ol').append(`<li><a target="_blank" href="${api[key] + location.href}">${key}</a></li>`)
+                }
                 //反馈按钮
                 // $('.h-ol').append(`<li><a target="_blank" style="color: #999;" href="https://github.com/shy1248/tampermk-js/issues">失效反馈</a></li>`);
 
