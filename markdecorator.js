@@ -172,7 +172,6 @@
   document.body.textContent = '';
   document.body.setAttribute('class', '_toc-left')
 
-
   //put Markdown into a container
   var _markdown = document.createElement("div");
   _markdown.setAttribute("id", "_markdown");
